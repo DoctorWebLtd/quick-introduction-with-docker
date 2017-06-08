@@ -10,7 +10,7 @@ services:
     volumes:
       - ../../keys/beta.key:/etc/opt/drweb.com/drweb32.key
   sendmail-milter:
-    image: registry.i.drweb.ru/public-containers/sendmail-milter:latest
+    image: docker.io/drwebapp/sendmail-milter:latest
     ports:
       - "1025:25"
       - "10110:110"

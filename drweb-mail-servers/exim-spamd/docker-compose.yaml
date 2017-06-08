@@ -10,7 +10,7 @@ services:
     volumes:
       - ../../keys/beta.key:/etc/opt/drweb.com/drweb32.key
   exim-spamd:
-    image: registry.i.drweb.ru/public-containers/exim-spamd:latest
+    image: docker.io/drwebapp/exim-spamd:latest
     ports:
       - "1025:25"
       - "10110:110"

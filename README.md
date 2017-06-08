@@ -5,10 +5,10 @@
      
 **Требования:**
 
-1. Пробный ключ для продуктов Drweb (может присутствовать BETA* ключ)
+1. Пробный ключ для [продуктов Drweb](https://products.drweb.ru/linux) (может присутствовать BETA* ключ)
 2. Операционная система Linux
-3. Docker Engine
-4. Docker Compose
+3. [Docker Engine](https://www.docker.com)
+4. [Docker Compose](https://docs.docker.com/compose/)
 
 
 **Быстрый старт:**

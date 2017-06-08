@@ -13,9 +13,9 @@
 
 **Быстрый старт:**
 
-1. git clone https://gitlab.i.drweb.ru/o.popov/quick-introduction-with-docker
+1. git clone https://github.com/DoctorWebLtd/quick-introduction-with-docker.git
 2. Выбрать доступную конфигурацию для нужного продукта
 4. Изменить путь до пробного ключа в файле docker-compose.yaml
-3. docker-compose pull && docker-compose up --force-recreate
+3. Выполнить docker-compose pull && docker-compose up --force-recreate
 
 **BETA ключ выдается во время выпуска продуктов, которые имеют статус BETA, он ограничен по времени и продуктам, может быть заменен в любой момент.*

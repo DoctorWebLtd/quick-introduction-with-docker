@@ -1,7 +1,7 @@
 version: '2'
 services:
   drweb:
-    image: drweb/drweb-mail-servers:11.0-beta
+    image: docker.io/drweb/drweb-mail-servers:11.0-beta
     ports:
       - "783:783"
       - "2259:2259"

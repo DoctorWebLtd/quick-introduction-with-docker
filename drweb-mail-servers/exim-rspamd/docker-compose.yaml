@@ -1,0 +1,22 @@
+version: '2'
+services:
+  drweb:
+    image: registry.i.drweb.ru/public-containers/drweb-mail-servers:11.0
+    ports:
+      - "783:783"
+      - "2259:2259"
+      - "4443:4443"
+      - "11333:11333"
+    volumes:
+      - ../../keys/beta.key:/etc/opt/drweb.com/drweb32.key
+  exim-rspamd:
+    image: registry.i.drweb.ru/public-containers/exim-rspamd:latest
+    ports:
+      - "1025:25"
+      - "10110:110"
+      - "10143:143"
+      - "10465:465"
+      - "10993:993"
+      - "10995:995"
+    depends_on:
+      - drweb

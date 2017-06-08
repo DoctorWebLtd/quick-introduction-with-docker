@@ -4,10 +4,14 @@
 
 Используемые сетевые порты (на системе, где выполняется команда docker-compose):
   
-  
 * SMTP:  1025
 * SMTPS: 10465
 * POP3:  10110
 * POP3S: 10995
 * IMAP:  10143
 * IMAPS: 10993
+
+Настройки сервисов:
+
+* Почтовый домен по-умолчанию: testlab1.test  
+* Пользователи (username:password): user1:user1, user2:user2, user3:user3, user4:user4, user5:user5, user6:user6

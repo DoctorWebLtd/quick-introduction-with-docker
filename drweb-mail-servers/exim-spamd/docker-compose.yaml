@@ -1,7 +1,7 @@
 version: '2'
 services:
   drweb:
-    image: registry.i.drweb.ru/public-containers/drweb-mail-servers:11.0
+    image: drweb/drweb-mail-servers:11.0-beta
     ports:
       - "783:783"
       - "2259:2259"

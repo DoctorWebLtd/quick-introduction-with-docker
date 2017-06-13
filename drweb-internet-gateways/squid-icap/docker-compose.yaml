@@ -1,0 +1,16 @@
+version: '2'
+services:
+  drweb:
+    image: docker.io/drweb/drweb-internet-gateways:11.0-beta
+    ports:
+      - "1344:1344"
+      - "3310:3310"
+      - "4443:4443"
+    volumes:
+      - ../../keys/trial.key:/etc/opt/drweb.com/drweb32.key
+  squid-icap:
+    image: docker.io/drwebapp/squid-icap:latest
+    ports:
+      - "3128:3128"
+    depends_on:
+      - drweb
